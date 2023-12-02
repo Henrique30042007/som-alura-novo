@@ -1,5 +1,12 @@
-function tocaSom (idElementoAudio) {
-    document.querySelector(idElementoAudio).play();
+function tocaSom (seletorAudio) {
+    document.querySelector(seletorAudio).play();
+
+    if(elemento === null){
+        //alert('Elemento não encontrado');
+        console.log('Elemento não encontrado');
+    }
+
+    //elemento.play();
 }
 
 const listaDeTeclas = document.querySelectorAll('.tecla');
@@ -30,9 +37,5 @@ tecla.onkeydown = function(evento) {
 
 tecla.onkeyup = function() {
 tecla.classList.remove('ativa');
-
-}
-
-
 
 }
